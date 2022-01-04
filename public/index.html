@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizstore | E-commerce website Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+    <div class="container"><div class="navbar">
+        <div class="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVkAAACSCAMAAADYdEkqAAAAe1BMVEUAAAD///8YGBiKiopJSUmTk5NQUFDExMT29vYNDQ1+fn7z8/Pg4ODV1dU/Pz+urq6Xl5dwcHDt7e0hISHR0dEuLi6Ghoa0tLQ7Ozumpqbc3NxbW1vKyspnZ2fCwsJgYGA8PDwvLy8fHx8nJyd2dnadnZ2np6dFRUWxsbEUzFzbAAAIBklEQVR4nO2dbVviOhCGRQXfQBdEVNBlPbi6//8XngOyUNLMS6bzhMvrzP3VlKY3tkkzM+FkcHUK5eqkInwnwFeacHJe88r/V4RZFGEWRZhFEWZRhFkUYRZFmEURZlGEWRRhFkWYRRFmUYRZFGEWRZhFEWZRhFkUYRZFmMXwGmYxnPbCLIZ5mMXw0aPNPpw50a/ILN+F2Vcnzog/G67pkxf72mPMDnoByZAX+8+6TZi1cMqbHa7bhFkDS17s46ZRmC3nmRf7/tUqzBYz4sU+bZuF2VIuhezKybZdmC1lwIv9+bddmC3kBy/2etcwzJbxwou93bcMs0Vc8mJ3D9lemC1EWGV5aTQNsyWc8WLPmm3DbAEXvNjzg8bHN3szuuuPB79W92tWT4tx/250U+vkRUx4sSeHvT6u2eHdOD/vvhrfDWt0oIgnXuz0sPURzU5n92xPH/qJ3BHBvtkNwaVHf695sT+S5scyO+nz/fzi6bFxCDnjme2vhuC63YFiHvmuLtL2xzE7EtbhGvzY/b+RZvdDstzCjPSQbd0WxzA7Kou9nW07fVyzb3wnR60D6psdLlQ+m/zeHHhUs2NNDw+oblaYbOe5X7/cHNPsH75/y8whlc2+WEvH349qVhNRTKlrVpi4sEwV3uQWNvjp4Ul26l3T7EQYBQTIeRrc7CvfsbvsQRXNCkubdtBmhYjiOH9UPbMfHdzxgM3O+bPfE4dVM6t657KBNStFFKn1jVpmTZMtJVizwvT7kTquktlZB3EiULO/+XPTKxJ1zAoBz44gzSrTNjJUMSu8wXQFaLYgophSw+zULk0F0Kw2bSNDBbM3HaSpwJkVJjQz7tgKZm87SFMBMyu823yyB5NmV7Prct7by5TIiewWlFnpZuPjoM4VIO1LEAZX35Pqu6VBKEZ44Y92NnveOsHK9fOzgMwKc/C+cLh31VIaDtLPZFfnr+Px+HXwUHxOjNmf/EnFccjbbHKLSHG5LYvnUeMrGf4RYiMJELPFEUW02eQeEVY2Nwxys8JpgVyI2eKIItrs7cGnC1GONWNqrehGPalAmBWiH5mIItrs4V0ihmmXzOth71IZ3AGYLU3bqGG2+aAV1ozFiUtvqgpI+psVHrJXmmwmd7PNB63wlM3FklM0yTT+ZoX5yVzzGe5mGzNa4R1GmhB+oZi2uZsVRs9n1Yf4V+Hv7xR+CCIX4xPuxDN6mxXO+Kr7FH+z+2fnP1wzrViFWmezlrSNDP5mdzc5u1L0p+BSpaivs1ljRDHF3+xuRvvONGJXNlsIb/C+Zk1pGxkAu538fdAyTUoXf/lOuprVFYIrAJjdPmi5GE1pdjs/y/A0K0zBV/o+A8xuL4PJMNCPXn9h34kczWoLwRUAzG5ntHQlSnsRV4YL+TiaFV7HuYhiCmJXqc29ztzAqleYBC404WdWXQiuAGF286Cl51y22CUTn3YzK4TvmbSNDAizm+ugv/6p1KcszOzYy6yUtlFWWYkw+2v9weS0sGB4PYDeycnLrKCi5CHbw5jdPGjJBHTdQkwbehXCyWxJIbgC2uzplZXNg5bsoWX8WkOPYT5mO6VtZEDlyNDLGuaPxJotKwTXdBdklhxmNcvdeci5potZIW2jfNhFmSVfmtKSaj3Q2prCQnAFKLPkwkbhCNuA/LIczHZN28iAMksmocuBegpyCOtutnPaRgaUWXIKU7CmkUAOit3Ndk7byIAySy5W27fHIP+xOpvl1uhPVGkbGcKsmLZhnM18I7OoWnEhonhq7G6YlTJ8re+M1Ucw+1ZcILNCRPHD2t3qsy7rvwDKrBByV6ZtZPhGbwoQs34RxZTqb7e2KcwaiFmntI0M1Vdk7LcXwqxq/34b32gVEWBWKATXp21kgNUwkt0132D+ZoVatTdrT7/6gjJLRmvMy4juZjsUgiuAmSWniQ/WT3Q326EQXAHMLP0Ik4oTKLzNdikEVwAz653J4W5Wv3+/DZhZJvvIuPjta7ZbIbgC3P4GvhlzPW+zQp7FhfGq9+DMMokRJan0e1zNdiwEV4Azy6WfmW41T7PC/v3FaRsZgLudMD03PQ8czSIiiilAs1x0ybKluaNZYf9+e3y5AdAsm41qWPLyM9u9EFwBcu8jttJOXf2zw82skLahKQRXgDTL56YXq/UyKz1ku1/4V1+AZoXJeOlN52VWKAR3ecj2wDuhCTXXxGbDFE5mXQrBFUDNSpudrIrCjT5mDfv328Du3idu0HNdMHN0MSt82eYlzjZYs4odevrq9zEXs8L+/c8vF16Ad5zU7A21zK1+XLTf3D3Mana58gJrVrlD6uK58TN2l/OPtYDW/7KDWaEQ3BfwLqlCdLTJ02K5XC52BbatSVl3sxV2v2yA3n+2fJvDLa30lM5mpUJwZ9BmxT27SNJ4WWez8l4/rsD3TDbvS59m04TZFHP9aTKGhdkU8w7qSc5HmG1hfdQmv7UTZtsIJRYkh2NYmM1QMKttcrg8EmZzGLf+PxjDwqyj2oMxLMzmMT0QDmqxwiyB6QeXmmNYmKWw/ORSM44aZkkmv8q718i7DrMM5b/G2BjDwizHiM3uyNAYw8IsT+n0a18tEGYFJmWxqP0YFmZF5uJPgzTZ1Y+FWY1b/e/9jHezg+9mlkol7VxbwnPzW/OTbLcHYUaqVV/ZwrrkZmRIgTX7H/O+OFE4H3ze7qFa3X+KLTZ/NQc7bcAFckwe34UNnb4xRzW75nL+8/lsvPh8e1ud1g1bY/kXfXSYukWrym4AAAAASUVORK5CYII=" width="125px" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="./images/cart.png"  width="30px" height="30px">
+        <img src="./images/menu.png"  class="menu-icon">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give your Workout<br> A New Style!</h1>
+            <p> Success isn't always about greatness. It's about consistency. consistent<br> hard work gains success. Greatness will come.</p>
+       <a href="" class="btn"> Explore Now &#8594;</a>
+       
+        </div>
+        <div class="col-2">
+            <img src="./images/image1.png" >
+        </div>
+    </div>
+</div>
+</div>
+<!-- ------featured categories----- -->
+
+
+
+
+<div class="categories">
+    <div class="small-container"><div class="row">
+        <div class="col-3">
+            <img src="./images/category-1.jpg" >
+        </div>
+        <div class="col-3">
+            <img src="./images/category-2.jpg" >
+        </div>
+        <div class="col-3">
+            <img src="./images/category-3.jpg" >
+        </div></div>
+    
+        
+    </div>
+</div>
+<!-- ------featured Product----- -->
+
+<div class="small-container">
+    <h2 class="title"> Featured Products</h2>
+    <div class="row">
+        <div class="col-4"><img src="./images/product-1.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    <div class="col-4"><img src="./images/product-2.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    <p>$50.00</p></div><div class="col-4"><img src="./images/product-3.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div><div class="col-4"><img src="./images/product-4.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    </div>
+    <h2 class="title"> Latest Products</h2>
+    <div class="row">
+        <div class="col-4"><img src="./images/product-5.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    <div class="col-4"><img src="./images/product-6.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    <p>$50.00</p></div><div class="col-4"><img src="./images/product-7.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    <div class="col-4"><img src="./images/product-8.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    
+    </div>
+    <div class="row">
+        <div class="col-4"><img src="./images/product-9.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    <div class="col-4"><img src="./images/product-10.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    <p>$50.00</p></div><div class="col-4"><img src="./images/product-11.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+    <div class="col-4"><img src="./images/product-12.jpg" >
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+            
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    <p>$50.00</p></div>
+</div>
+<!-- ---offer----- -->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2"><img src="./images/exclusive.png" class="offer-img"></div>
+            <div class="col-2">
+                <p>Exclusively Available on FaizStore</p>
+            <h1>Smart Band 4</h1>
+            <small> The mi smart band 4 featuresa 39.9% larger (than mi band 3) Amoled color full-touch display with adjustable brightness, so everything is clear as can </small>
+            <a href="" class="btn">Buy now &#8594;</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- ----testmoinal---- -->
+<div class="testimonial">
+    <div class="small-container">
+    <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="./images/user-1.png" >
+                <h3>Nimra Mastoor</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="./images/user-2.png" >
+                <h3>Mahad </h3>
+            </div><div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p >lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.lerom isum is a dummty text for any person sa your are easily to copy.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="./images/user-3.png" >
+                <h3>Labia</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- brand -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="./images/logo-godrej.png" >
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-oppo.png" >
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-coca-cola.png" >
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-paypal.png" >
+            </div>
+            <div class="col-5">
+                <img src="./images/logo-philips.png" >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>
+                    Download App in our android or ios mobile phone.
+                </p>
+                <div class="app-logo">
+                    <img src="./images/play-store.png" >
+                    <img src="./images/app-store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./images/logo-white.png" >
+                <p>
+                   Our purpose is in sustainably make the pleasure amd benefits of sport Accessible to the many.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog post</li>
+                    <li>Return policy</li>
+                    <li> Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li> Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copy right 2021@Designed by Faiz E Arsal</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/6dfce0ef57.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
